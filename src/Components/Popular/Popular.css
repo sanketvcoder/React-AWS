@@ -1,0 +1,46 @@
+.popular {
+  text-align: center;
+  padding: 60px 0;
+  background: #f9fafb;
+}
+
+.popular h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.popular hr {
+  width: 120px;
+  height: 4px;
+  background: #16a34a;
+  border: none;
+  border-radius: 2px;
+  margin: 10px auto 40px;
+}
+
+/* GRID CONTAINER */
+.popular-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: start;
+  padding: 0 60px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .popular-item {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .popular h2 {
+    font-size: 24px;
+  }
+}
